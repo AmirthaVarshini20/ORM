@@ -17,16 +17,16 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 cars
 
 # PROGRAM
-
-admin.py:
 ```
+admin.py:
+
 from django.contrib import admin
 from .models import Employee,EmployeeAdmin
 admin.site.register(Employee,EmployeeAdmin)
 ```
-
-urls.py:
 ```
+urls.py:
+
 urlpatterns = [
     path('admin/', admin.site.urls),
    
